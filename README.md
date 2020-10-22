@@ -8,6 +8,7 @@ https://www.npmjs.com/package/mysql
 A partir da versão 8 do mysql, ao tentar realizar a conexão, você receberá um erro sugerindo que o mysql deve ser atualizado. O problema na verdade é que você terá que criar um novo usuário no mysql e dar a esse novo usuário as permissões necessárias.
 
 ex.:
+### No MySQL siga os passos: 
 
 1º Crie o usuário.
 
