@@ -1,22 +1,22 @@
 # Node.js_Mysql_8.0
-Resolução de problemas de conexão.
+Troubleshooting connection problems.
 
-### Instalar o drive do mysql.
+### Install the mysql driver.
 https://www.npmjs.com/package/mysql
 
-### O ERRO!
-A partir da versão 8 do mysql, ao tentar realizar a conexão, você receberá um erro sugerindo que o mysql deve ser atualizado. O problema na verdade é que você terá que criar um novo usuário no mysql e dar a esse novo usuário as permissões necessárias.
+### The error!
+From version 8 of mysql, when trying to make the connection, you will receive an error suggesting that mysql should be updated. The problem is actually that you will have to create a new user on mysql and give that new user the necessary permissions.
 
-ex.:
-### No MySQL siga os passos: 
+Example:
+### In MySQL follow the steps: 
 
-1º Crie o usuário.
+1st Create the user.
 
 CREATE USER 'paulo'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 
-2º Dê as permissões.
+2nd Give the permissions.
 
 GRANT ALL PRIVILEGES ON * . * TO 'paulo'@'localhost';
 
 
-Pronto! Tente conectar novamente e o problema não ocorrerá novamente.
+Ready! Try to connect again and the problem will not occur again.
